@@ -1,0 +1,36 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.header-logo {
+  & h1 {
+    color: #404040;
+    font-family: "Bebas Neue";
+    font-size: 37px;
+    // line-height: 19px;
+  }
+  & p {
+    color: #404040;
+    font-family: "Arial MT";
+    font-size: 15px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  & a {
+    color: #404040;
+    font-family: "HelveticaLight";
+    font-size: 17px;
+    text-transform: uppercase;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+    &:hover {
+      background: url(/img/red.png);
+      color: #fff;
+    }
+  }
+}
