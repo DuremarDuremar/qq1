@@ -1,9 +1,10 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 35px;
+  // margin-top: 35px;
 }
 .header-logo {
+  padding-top: 70px;
   & h1 {
     color: #404040;
     font-family: "Bebas Neue";
@@ -20,17 +21,26 @@
 .header-nav {
   display: flex;
   align-items: center;
-  & a {
-    color: #404040;
-    font-family: "HelveticaLight";
-    font-size: 17px;
-    text-transform: uppercase;
+  & div {
+    padding: 70px 7px 0 7px;
+    cursor: pointer;
+    &:hover {
+      background-color: #d45e5e;
+    }
+
+    &:hover a {
+      color: #fff;
+    }
+
     &:not(:last-child) {
       margin-right: 32px;
     }
-    &:hover {
-      background: url(/img/red.png);
-      color: #fff;
+
+    & a {
+      color: #404040;
+      font-family: "HelveticaLight";
+      font-size: 17px;
+      text-transform: uppercase;
     }
   }
 }
