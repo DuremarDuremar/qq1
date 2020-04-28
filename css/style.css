@@ -10,8 +10,14 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.content {
+.container {
   max-width: 977px;
+  margin: 0px auto;
+  padding: 0 5px;
+}
+
+.container2 {
+  max-width: 950px;
   margin: 0px auto;
   padding: 0 5px;
 }
@@ -51,7 +57,7 @@ body {
 }
 
 .header-nav div {
-  padding: 70px 7px 0 7px;
+  padding: 70px 7px 7px 7px;
   cursor: pointer;
 }
 
@@ -64,7 +70,7 @@ body {
 }
 
 .header-nav div:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 28px;
 }
 
 .header-nav div a {
@@ -72,4 +78,106 @@ body {
   font-family: "HelveticaLight";
   font-size: 17px;
   text-transform: uppercase;
+}
+
+.content-home {
+  margin-top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-home-title-text {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  background-color: #fff;
+}
+
+.content-home-title-text p {
+  padding: 10px;
+  color: #404040;
+  font-family: Cambria;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  font-style: italic;
+  -webkit-transform: rotateX(15deg);
+          transform: rotateX(15deg);
+}
+
+.content-home-title-img2 img {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  bottom: 40px;
+  z-index: -1;
+}
+
+.content-home-title-img1 img {
+  display: block;
+  margin: 0px auto;
+  position: relative;
+}
+
+.content-home-portfolio {
+  display: block;
+  margin-top: 53px;
+}
+
+.content-home-portfolio-title {
+  color: #404040;
+  font-family: Cambria;
+  font-size: 23px;
+  padding-bottom: 38px;
+}
+
+.content-home-portfolio-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 33px;
+  grid-row-gap: 30px;
+}
+
+footer {
+  background-color: #d45e5e;
+  margin-top: 121px;
+}
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr 2fr;
+      grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+
+.footer-img {
+  background-color: aquamarine;
+}
+
+.footer-img img {
+  display: block;
+  position: relative;
+  bottom: 40px;
+  border: 7px solid #fff;
+}
+
+.footer-name {
+  background-color: burlywood;
+}
+
+.footer-logo {
+  background-color: coral;
+}
+
+.footer-skills {
+  background-color: darkkhaki;
+}
+
+.footer-text {
+  background-color: goldenrod;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
 }

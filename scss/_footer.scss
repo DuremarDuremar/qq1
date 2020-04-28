@@ -1,0 +1,31 @@
+footer {
+  background-color: #d45e5e;
+  margin-top: 121px;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+}
+.footer-img {
+  background-color: aquamarine;
+  & img {
+    display: block;
+    position: relative;
+    bottom: 40px;
+    border: 7px solid #fff;
+  }
+}
+.footer-name {
+  background-color: burlywood;
+}
+.footer-logo {
+  background-color: coral;
+}
+.footer-skills {
+  background-color: darkkhaki;
+}
+.footer-text {
+  background-color: goldenrod;
+  grid-column: 1/4;
+}
