@@ -216,10 +216,70 @@ footer {
 .footer-skills ul li {
   font-family: "PT Sans";
   font-size: 19px;
+  position: relative;
 }
 
 .footer-skills ul li:not(:last-child) {
   padding-bottom: 11px;
+}
+
+.footer-skills ul li::after {
+  content: "";
+  width: 197px;
+  height: 10px;
+  background-color: #e27878;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.footer-skills ul li:nth-child(1)::before {
+  content: "";
+  width: 109px;
+  height: 10px;
+  background-color: #282828;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
+}
+
+.footer-skills ul li:nth-child(2)::before {
+  content: "";
+  width: 157px;
+  height: 10px;
+  background-color: #282828;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
+}
+
+.footer-skills ul li:nth-child(3)::before {
+  content: "";
+  width: 55px;
+  height: 10px;
+  background-color: #282828;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
+}
+
+.footer-skills ul li:nth-child(4)::before {
+  content: "";
+  width: 184px;
+  height: 10px;
+  background-color: #282828;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
 }
 
 .footer-text {

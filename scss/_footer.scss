@@ -61,8 +61,71 @@ footer {
   & ul li {
     font-family: "PT Sans";
     font-size: 19px;
+    position: relative;
     &:not(:last-child) {
       padding-bottom: 11px;
+    }
+    &::after {
+      content: "";
+      width: 197px;
+      height: 10px;
+      background-color: #e27878;
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: 40%;
+    }
+    &:nth-child(1) {
+      &::before {
+        content: "";
+        width: 109px;
+        height: 10px;
+        background-color: #282828;
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        z-index: 1;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        content: "";
+        width: 157px;
+        height: 10px;
+        background-color: #282828;
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        z-index: 1;
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        content: "";
+        width: 55px;
+        height: 10px;
+        background-color: #282828;
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        z-index: 1;
+      }
+    }
+    &:nth-child(4) {
+      &::before {
+        content: "";
+        width: 184px;
+        height: 10px;
+        background-color: #282828;
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        z-index: 1;
+      }
     }
   }
 }
