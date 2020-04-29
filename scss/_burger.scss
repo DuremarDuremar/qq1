@@ -4,10 +4,12 @@
   left: 10px;
   width: 80px;
   height: 80px;
-  background-color: #d45e5e;
   border-radius: 20px;
+  background-color: #d45e5e;
   display: none;
   z-index: 1;
+  transition: background 0.2s ease-out 0.4s;
+
   & a {
     width: 100%;
     height: 100%;
@@ -23,6 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   &::after {
     content: "";
     width: 40px;
@@ -39,4 +42,21 @@
     position: absolute;
     top: -12px;
   }
+}
+
+._active-burger {
+  background-color: #fff;
+  border: 1px solid #d45e5e;
+}
+
+._active-burger a span {
+  background-color: #d45e5e;
+}
+._active-burger a span:before {
+  background-color: #d45e5e;
+  top: -6px;
+}
+._active-burger a span:after {
+  background-color: #d45e5e;
+  top: 6px;
 }
