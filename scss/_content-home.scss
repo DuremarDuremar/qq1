@@ -48,6 +48,7 @@
   padding-bottom: 38px;
 }
 .content-home-portfolio-block {
+  justify-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 33px;
