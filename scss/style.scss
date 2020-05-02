@@ -26,6 +26,21 @@ body {
   margin: 0px auto;
   padding: 0 5px;
 }
+.main-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 2;
+}
+
+.main-modal._active-burger {
+  display: block;
+  background-color: rgba(235, 77, 75, 0.7);
+}
 
 ////////////////////////////////////////////////
 @import "_header";
