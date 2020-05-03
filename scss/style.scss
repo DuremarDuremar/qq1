@@ -42,6 +42,13 @@ body {
   background-color: rgba(235, 77, 75, 0.7);
 }
 
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+}
+
 ////////////////////////////////////////////////
 @import "_header";
 @import "_burger";

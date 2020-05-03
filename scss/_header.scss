@@ -23,7 +23,6 @@
   align-items: center;
   & div {
     padding: 70px 7px 7px 7px;
-    cursor: pointer;
     &:hover {
       background-color: #d45e5e;
     }
@@ -37,6 +36,7 @@
     }
 
     & a {
+      cursor: pointer;
       color: #404040;
       font-family: "HelveticaLight";
       font-size: 17px;

@@ -37,6 +37,16 @@ body {
   background-color: rgba(235, 77, 75, 0.7);
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +83,6 @@ body {
 
 .header-nav div {
   padding: 70px 7px 7px 7px;
-  cursor: pointer;
 }
 
 .header-nav div:hover {
@@ -89,6 +98,7 @@ body {
 }
 
 .header-nav div a {
+  cursor: pointer;
   color: #404040;
   font-family: "HelveticaLight";
   font-size: 17px;
@@ -105,8 +115,8 @@ body {
   background-color: #d45e5e;
   display: none;
   z-index: 3;
-  -webkit-transition: background 0.2s ease-out 0.4s;
-  transition: background 0.2s ease-out 0.4s;
+  -webkit-transition: background 0.2s ease-out 0.2s;
+  transition: background 0.2s ease-out 0.2s;
 }
 
 .header-burger a {
@@ -168,13 +178,19 @@ body {
   position: fixed;
   top: 110px;
   left: 10px;
-  width: 80px;
-  height: 140px;
+  width: 180px;
+  height: 240px;
   z-index: 3;
+  font-size: 20px;
 }
 
 .nav-burger div a {
   color: #d45e5e;
+}
+
+.nav-burger div a:hover {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 ._active-burger.nav-burger {
@@ -195,9 +211,6 @@ body {
 
 .content-home {
   margin-top: 57px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .content-home-title-text {
